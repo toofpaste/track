@@ -1,4 +1,5 @@
 $(function(){
+  var name = prompt("What is your name?");
   $("form#qq").submit(function(event){
     var answer1 = parseInt($("input:radio[name=q1]:checked").val());
     var answer2 = parseInt($("input:radio[name=q2]:checked").val());
@@ -6,6 +7,7 @@ $(function(){
     var answer4 = parseInt($("input:radio[name=q4]:checked").val());
     var answer5 = parseInt($("input:radio[name=q5]:checked").val());
     var imp = parseInt($("input:radio[name=important]:checked").val());
+    $("#greeting").text("Hello, " + name + "... Finding your language").show();
 
     var js = 0;
     var java = 0;
@@ -393,22 +395,8 @@ $(function(){
       match = match.toFixed(2);
       $("#output").text("HTML/Css is your best language. With a " + match + "% match!").show();
     };
-
-
     console.log(python, object, ruby, html, swift, js, java, c, php);
-
-
-
-
-
-
-
     event.preventDefault();
-
   });
-
-
-
-
 
 });
