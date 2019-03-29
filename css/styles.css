@@ -1,0 +1,22 @@
+body {
+  background-image: url(https://cdn.wallpapersafari.com/48/21/8WZu6M.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  border: 1px solid black;
+  text-align: center;
+  font-size: 25px;
+}
+.radio{
+  font-size: 20px;
+  border: 1px solid black;
+  margin-right: 55%;
+}
+.container{
+  background-color: white;
+  opacity: .8;
+  margin-top: 20px;
+  border: 2px solid black;
+}
