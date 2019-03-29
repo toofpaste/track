@@ -10,7 +10,7 @@ _As you'll see on the index here are 5 questions. The page takes your answers an
 
 ## Setup/Installation Requirements
 
-* _Clone the repo from github_
+* _Clone the repo from github https://github.com/toofpaste/track _
 * _Open the file and navigate to the index.html file_
 * _Open index.html inside of google chrome_
 * _or just visit the website directly at_
