@@ -144,242 +144,258 @@ $(function(){
 
 
     if (object > c && object > java && object > swift && object > js && object > php && object > python && object > ruby && object > html){
+      if(object === c ){
+       match = (object/max)*100;
+       match = match.toFixed(2);
+       $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
+       $("#output2").text("C# as your language also at a " + match + "% match").show();
+     }else if (object === java) {
+       match = (object/max)*100;
+       match = match.toFixed(2);
+       $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
+       $("#output2").text("Java as your language also at a " + match + "% match").show();
+   }else if (object === swift){
+     match = (object/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
+     $("#output2").text("Swift as your language also at a " + match + "% match").show();
+   }else if (object === js ){
+     match = (object/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
+     $("#output2").text("Javascript as your language also at a " + match + "% match").show();
+   }else if(object === php){
+     match = (object/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
+     $("#output2").text("PHP as your language also at a " + match + "% match").show();
+   }else if(object === python){
+     match = (object/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
+     $("#output2").text("Python as your language also at a " + match + "% match").show();
+   }else if (object === ruby){
+     match = (object/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
+     $("#output2").text("Ruby as your language also at a " + match + "% match").show();
+   }else if (object === html){
+     match = (object/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
+     $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
+   }else {
       match = (object/max)*100;
       match = match.toFixed(2);
       $("#output").text("Objective -C is your best language. With a " + match + "% match!").show();
-    }else if(object === c ){
-      match = (object/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
-      $("#output2").text("C# as your language also at a " + match + "% match").show();
-    }else if (object === java) {
-      match = (object/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
-      $("#output2").text("Java as your language also at a " + match + "% match").show();
-  }else if (object === swift){
-    match = (object/max)*100;
-    match = match.toFixed(2);
-    $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
-    $("#output2").text("Swift as your language also at a " + match + "% match").show();
-  }else if (object === js ){
-    match = (object/max)*100;
-    match = match.toFixed(2);
-    $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
-    $("#output2").text("Javascript as your language also at a " + match + "% match").show();
-  }else if(object === php){
-    match = (object/max)*100;
-    match = match.toFixed(2);
-    $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
-    $("#output2").text("PHP as your language also at a " + match + "% match").show();
-  }else if(object === python){
-    match = (object/max)*100;
-    match = match.toFixed(2);
-    $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
-    $("#output2").text("Python as your language also at a " + match + "% match").show();
-  }else if (object === ruby){
-    match = (object/max)*100;
-    match = match.toFixed(2);
-    $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
-    $("#output2").text("Ruby as your language also at a " + match + "% match").show();
-  }else if (object === html){
-    match = (object/max)*100;
-    match = match.toFixed(2);
-    $("#output").text("I suggest Objective -C. With a " + match + "% match Or").show();
-    $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
+    };
   };
 
+  if (c > object && c > java && c > swift && c > js && c > php&& c > python && c > ruby && c > html) {
+    if (c === java){
+     match = (c/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest C#. With a " + match + "% match Or").show();
+     $("#output2").text("Java as your language also at a " + match + "% match").show();
+   }else if (c === swift){
+     match = (c/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest C#. With a " + match + "% match Or").show();
+     $("#output2").text("Swift as your language also at a " + match + "% match").show();
+   }else if (c === php){
+     match = (c/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest C#. With a " + match + "% match Or").show();
+     $("#output2").text("PHP as your language also at a " + match + "% match").show();
+   }else if (c === js){
+     match = (c/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest C#. With a " + match + "% match Or").show();
+     $("#output2").text("Javascript as your language also at a " + match + "% match").show();
+   }else if (c === python){
+     match = (c/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest C#. With a " + match + "% match Or").show();
+     $("#output2").text("Python as your language also at a " + match + "% match").show();
+   }else if (c === ruby){
+     match = (c/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest C#. With a " + match + "% match Or").show();
+     $("#output2").text("Ruby as your language also at a " + match + "% match").show();
+   }else if (c === html){
+     match = (c/max)*100;
+     match = match.toFixed(2);
+     $("#output").text("I suggest C#. With a " + match + "% match Or").show();
+     $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
+   }else{
 
-
-    if (c > object && c > java && c > swift && c > js && c > php&& c > python && c > ruby && c > html) {
       match = (c/max)*100;
       match = match.toFixed(2);
       $("#output").text("C# is your best language. With a " + match + "% match!").show();
-    }else if (c === java){
-      match = (c/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest C#. With a " + match + "% match Or").show();
-      $("#output2").text("Java as your language also at a " + match + "% match").show();
-    }else if (c === swift){
-      match = (c/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest C#. With a " + match + "% match Or").show();
-      $("#output2").text("Swift as your language also at a " + match + "% match").show();
-    }else if (c === php){
-      match = (c/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest C#. With a " + match + "% match Or").show();
-      $("#output2").text("PHP as your language also at a " + match + "% match").show();
-    }else if (c === js){
-      match = (c/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest C#. With a " + match + "% match Or").show();
-      $("#output2").text("Javascript as your language also at a " + match + "% match").show();
-    }else if (c === python){
-      match = (c/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest C#. With a " + match + "% match Or").show();
-      $("#output2").text("Python as your language also at a " + match + "% match").show();
-    }else if (c === ruby){
-      match = (c/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest C#. With a " + match + "% match Or").show();
-      $("#output2").text("Ruby as your language also at a " + match + "% match").show();
-    }else if (c === html){
-      match = (c/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest C#. With a " + match + "% match Or").show();
-      $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
     };
-
+  };
 
     if (java > object && java > c && java > swift && java > js && java > php && java > python && java > ruby && java > html){
+      if (java === swift){
+        match = (java/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Java. With a " + match + "% match Or").show();
+        $("#output2").text("Swift as your language also at a " + match + "% match").show();
+      }else if (java === js){
+        match = (java/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Java. With a " + match + "% match Or").show();
+        $("#output2").text("Javascript as your language also at a " + match + "% match").show();
+      }else if (java === php){
+        match = (java/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Java. With a " + match + "% match Or").show();
+        $("#output2").text("PHP as your language also at a " + match + "% match").show();
+      }else if (java === python){
+        match = (java/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Java. With a " + match + "% match Or").show();
+        $("#output2").text("Python as your language also at a " + match + "% match").show();
+      }else if (java === ruby){
+        match = (java/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Java. With a " + match + "% match Or").show();
+        $("#output2").text("Ruby as your language also at a " + match + "% match").show();
+      }else if (java === html){
+        match = (java/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Java. With a " + match + "% match Or").show();
+        $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
+      }else {
       match = (java/max)*100;
       match = match.toFixed(2);
       $("#output").text("Java is your best language. With a " + match + "% match!").show();
-    }else if (java === swift){
-      match = (java/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Java. With a " + match + "% match Or").show();
-      $("#output2").text("Swift as your language also at a " + match + "% match").show();
-    }else if (java === js){
-      match = (java/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Java. With a " + match + "% match Or").show();
-      $("#output2").text("Javascript as your language also at a " + match + "% match").show();
-    }else if (java === php){
-      match = (java/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Java. With a " + match + "% match Or").show();
-      $("#output2").text("PHP as your language also at a " + match + "% match").show();
-    }else if (java === python){
-      match = (java/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Java. With a " + match + "% match Or").show();
-      $("#output2").text("Python as your language also at a " + match + "% match").show();
-    }else if (java === ruby){
-      match = (java/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Java. With a " + match + "% match Or").show();
-      $("#output2").text("Ruby as your language also at a " + match + "% match").show();
-    }else if (java === html){
-      match = (java/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Java. With a " + match + "% match Or").show();
-      $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
     };
-
+  };
 
     if (swift > object && swift > c && swift > java && swift > js && swift > php && swift > python && swift > ruby && swift > html){
+      if (swift === js){
+        match = (swift/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Swift. With a " + match + "% match Or").show();
+        $("#output2").text("Javascript as your language also at a " + match + "% match").show();
+      }else if (swift === php){
+        match = (swift/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Swift. With a " + match + "% match Or").show();
+        $("#output2").text("PHP as your language also at a " + match + "% match").show();
+      }else if (swift === python){
+        match = (swift/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Swift. With a " + match + "% match Or").show();
+        $("#output2").text("Python as your language also at a " + match + "% match").show();
+      }else if (swift === ruby){
+        match = (swift/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Swift. With a " + match + "% match Or").show();
+        $("#output2").text("Ruby as your language also at a " + match + "% match").show();
+      }else if (swift === html){
+        match = (swift/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Swift. With a " + match + "% match Or").show();
+        $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
+      }else {
       match = (swift/max)*100;
       match = match.toFixed(2);
       $("#output").text("Swift is your best language. With a " + match + "% match!").show();
-    }else if (swift === js){
-      match = (swift/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Swift. With a " + match + "% match Or").show();
-      $("#output2").text("Javascript as your language also at a " + match + "% match").show();
-    }else if (swift === php){
-      match = (swift/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Swift. With a " + match + "% match Or").show();
-      $("#output2").text("PHP as your language also at a " + match + "% match").show();
-    }else if (swift === python){
-      match = (swift/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Swift. With a " + match + "% match Or").show();
-      $("#output2").text("Python as your language also at a " + match + "% match").show();
-    }else if (swift === ruby){
-      match = (swift/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Swift. With a " + match + "% match Or").show();
-      $("#output2").text("Ruby as your language also at a " + match + "% match").show();
-    }else if (swift === html){
-      match = (swift/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Swift. With a " + match + "% match Or").show();
-      $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
     };
+  };
 
     if (js > object && js > c && js > java && js > swift && js > php && js > python && js > ruby && js >  html){
+      if (js === php){
+        match = (js/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Javascript. With a " + match + "% match Or").show();
+        $("#output2").text("PHP as your language also at a " + match + "% match").show();
+      }else if (js === python){
+        match = (js/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Javascript. With a " + match + "% match Or").show();
+        $("#output2").text("ython as your language also at a " + match + "% match").show();
+      }else if (js === ruby){
+        match = (js/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Javascript. With a " + match + "% match Or").show();
+        $("#output2").text("Ruby as your language also at a " + match + "% match").show();
+      }else if (js === html){
+        match = (js/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Javascript. With a " + match + "% match Or").show();
+        $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
+      }else {
       match = (js/max)*100;
       match = match.toFixed(2);
       $("#output").text("Javascript is your best language. With a " + match + "% match!").show();
-    }else if (js === php){
-      match = (js/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Javascript. With a " + match + "% match Or").show();
-      $("#output2").text("PHP as your language also at a " + match + "% match").show();
-    }else if (js === python){
-      match = (js/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Javascript. With a " + match + "% match Or").show();
-      $("#output2").text("ython as your language also at a " + match + "% match").show();
-    }else if (js === ruby){
-      match = (js/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Javascript. With a " + match + "% match Or").show();
-      $("#output2").text("Ruby as your language also at a " + match + "% match").show();
-    }else if (js === html){
-      match = (js/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Javascript. With a " + match + "% match Or").show();
-      $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
     };
+  };
 
     if (php > object && php > c && php > java && php > swift && php > js && php > python && php > ruby && php > html){
+      if (php === python){
+        match = (php/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest PHP. With a " + match + "% match Or").show();
+        $("#output2").text("Python as your language also at a " + match + "% match").show();
+      }else if (php === ruby){
+        match = (php/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest PHP. With a " + match + "% match Or").show();
+        $("#output2").text("Ruby as your language also at a " + match + "% match").show();
+      }else if (php === html){
+        match = (php/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest PHP. With a " + match + "% match Or").show();
+        $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
+      }else{
       match = (php/max)*100;
       match = match.toFixed(2);
       $("#output").text("PHP is your best language. With a " + match + "% match!").show();
-    }else if (php === python){
-      match = (php/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest PHP. With a " + match + "% match Or").show();
-      $("#output2").text("Python as your language also at a " + match + "% match").show();
-    }else if (php === ruby){
-      match = (php/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest PHP. With a " + match + "% match Or").show();
-      $("#output2").text("Ruby as your language also at a " + match + "% match").show();
-    }else if (php === html){
-      match = (php/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest PHP. With a " + match + "% match Or").show();
-      $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
     };
+  };
 
     if (python > object && python > c && python > java && python > swift && python > js && python > php && python > ruby && python > html){
+      if (python === ruby){
+        match = (python/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Python. With a " + match + "% match Or").show();
+        $("#output2").text("Ruby as your language also at a " + match + "% match").show();
+      }else if (python === html){
+        match = (python/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Python. With a " + match + "% match Or").show();
+        $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
+      }else {
       match = (python/max)*100;
       match = match.toFixed(2);
       $("#output").text("Python is your best language. With a " + match + "% match!").show();
-    }else if (python === ruby){
-      match = (python/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Python. With a " + match + "% match Or").show();
-      $("#output2").text("Ruby as your language also at a " + match + "% match").show();
-    }else if (python === html){
-      match = (python/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Python. With a " + match + "% match Or").show();
-      $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
     };
+  };
 
     if (ruby > object && ruby > c && ruby > java && ruby > swift && ruby > js && ruby > php && ruby > python && ruby > html){
+      if (ruby === html){
+        match = (ruby/max)*100;
+        match = match.toFixed(2);
+        $("#output").text("I suggest Ruby. With a " + match + "% match Or").show();
+        $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
+      }else {
       match = (ruby/max)*100;
       match = match.toFixed(2);
       $("#output").text("Ruby is your best language. With a " + match + "% match!").show();
-    }else if (ruby === html){
-      match = (ruby/max)*100;
-      match = match.toFixed(2);
-      $("#output").text("I suggest Ruby. With a " + match + "% match Or").show();
-      $("#output2").text("HTML/CSS as your language also at a " + match + "% match").show();
     };
-    
+  };
+
     if (html > object && html > c && html > java && html > swift && html > js && html > php && html > python && html > ruby){
       match = (html/max)*100;
       match = match.toFixed(2);
       $("#output").text("HTML/Css is your best language. With a " + match + "% match!").show();
     };
+
+
+    console.log(python, object, ruby, html, swift, js, java, c, php);
 
 
 
