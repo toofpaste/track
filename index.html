@@ -12,8 +12,16 @@
   </head>
   <body>
 
+    <div class="title">
+      <h2>1. Select the most accurate answer for yourself</h2>
+      <h3>2. Then select the button on the left for the question that is most important to you</h3>
+    </div>
+
     <form id="qq">
-      <div class="container">
+      <div class="radio">
+      <label>
+      <input id ="side" type="radio" name="important" value="100" checked>
+" "      <div class="container">
         <div class="row">
           <h1><strong>Is the language being in high demand important to you?</strong></h1>
           <div class="radio">
@@ -26,13 +34,16 @@
           <div class="radio">
             <label>
               <input type="radio" name="q1" value="10">
-              No, the demand of the language is not imortant to me 2
+              No, the demand of the language is not imortant to me 10
             </label>
             <!-- everything + ruby html/css swift -->
            </div>
         </div>
       </div>
+      </label>
 
+      <label>
+      <input id ="side" type="radio" name="important" value="200">
       <div class="container">
         <div class="row">
           <h1><strong>Which type of company suits you better?</strong></h1>
@@ -59,7 +70,10 @@
              </div>
            </div>
         </div>
+        </label>
 
+        <label>
+        <input id ="side" type="radio" name="important" value="300">
         <div class="container">
           <div class="row">
             <h1><strong>Which platform interests you the most?</strong></h1>
@@ -100,7 +114,10 @@
                  </div>
              </div>
           </div>
+          </label>
 
+          <label>
+          <input id ="side" type="radio" name="important" value="400">
           <div class="container">
             <div class="row">
               <h1><strong>Do you prefer Front end or back end developemnt?</strong></h1>
@@ -127,8 +144,10 @@
                  </div>
                </div>
             </div>
+            </label>
 
-
+            <label>
+            <input  id ="side" type="radio" name="important" value="500">
             <div class="container">
               <div class="row">
                 <h1><strong>How experienced are you with coding?</strong></h1>
@@ -155,11 +174,23 @@
                    </div>
                  </div>
               </div>
+              </label>
 
         <div class="container">
           <div class="row">
             <button type="submit" name="button" id="btn btn-ifno">Submit</button>
           </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div id="output">
+
+            </div>
+          </div>
+        </div>
+
+
         </div>
       </form>
 
