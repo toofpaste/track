@@ -396,7 +396,25 @@ $(function(){
       $("#output").text("HTML/Css is your best language. With a " + match + "% match!").show();
     };
     console.log(python, object, ruby, html, swift, js, java, c, php);
+
+    $("#moreI").click(function(){
+      $("#info").text("All of " + name + "'s language match percent").show();
+      $("#info1").text( "Java: Match = " + ((java/max)*100) + "%").show();
+      $("#info2").text( "JavaScript: Match = " + ((js/max)*100) + "%").show();
+      $("#info3").text( "Objective -C: Match = " + ((object/max)*100) + "%").show();
+      $("#info4").text( "Ruby: Match = " + ((ruby/max)*100) + "%").show();
+      $("#info5").text( "Python: Match = " + ((python/max)*100) + "%").show();
+      $("#info6").text( "HTML/CSS: Match = " + ((html/max)*100) + "%").show();
+      $("#info7").text( "Swift: Match = " + ((swift/max)*100) + "%").show();
+      $("#info8").text( "C#: Match = " + ((c/max)*100) + "%").show();
+      $("#info9").text( "PHP: Match = " + ((php/max)*100) + "%").show();
+
+
+    });
+
+
     event.preventDefault();
   });
+
 
 });
