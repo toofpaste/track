@@ -89,6 +89,39 @@ $(function(){
       ruby += 1;
       html += 1;
     };
+
+    if (imp === 100 && answer1 === 1){
+      java += 5;
+    }else if (imp === 100 && answer1 === 10){
+      ruby += 5;
+    }else if (imp === 200 && answer2 === 3){
+      swift += 2;
+    }else if (imp === 200 && answer2 === 4){
+      html += 5;
+    }else if (imp === 300 && answer3 === 21){
+      c+= 5;
+    }else if (imp === 300 && answer3 === 7){
+      swift += 2;
+    }else if (imp === 300 && answer3 === 8){
+      java += 5;
+    }else if (imp === 300 && answer3 === 9){
+      js += 2;
+    }else if (imp === 300 && answer3 === 10){
+      python += 5;
+    }else if (imp === 400 && answer4 === 11){
+      html += 5;
+    }else if (imp === 400 && answer4 === 12){
+      php += 2;
+    }else if (imp === 400 && answer4 === 13){
+      c += 5;
+    }else if (imp === 500 && answer5 === 14){
+      object += 2;
+    }else if (imp === 500 && answer5 === 15){
+      java += 2;
+    }else if (imp === 500 && answer5 === 16){
+      html += 5;
+    };
+
     alert(object);
     alert(c);
     alert(java);
@@ -98,12 +131,11 @@ $(function(){
     alert(python);
     alert(ruby);
     alert(html);
+    alert(total);
 
 
 
 
-
-        if (total === 40 || total === 39 || total === 37 || total === 47 || total === 41 || total === 42 || total === 51 || total === 50 || total === 52){
             if (answer1 === 1 && answer2 === 3 && answer3 === 9 && answer4 === 11 && answer5 === 16){
               //total = 40
               $("#output").text("Javascript is your best language").show();
@@ -132,8 +164,6 @@ $(function(){
               //total = 52
               $("#output").text("C# is your best language").show();
             }else alert("Error with standard answers");
-
-        }else alert("No language selected");
 
 
 
