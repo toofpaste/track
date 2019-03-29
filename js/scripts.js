@@ -408,8 +408,6 @@ $(function(){
       $("#info7").text( "Swift: Match = " + ((swift/max)*100) + "%").show();
       $("#info8").text( "C#: Match = " + ((c/max)*100) + "%").show();
       $("#info9").text( "PHP: Match = " + ((php/max)*100) + "%").show();
-
-
     });
 
 
