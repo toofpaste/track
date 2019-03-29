@@ -89,38 +89,95 @@ $(function(){
       ruby += 1;
       html += 1;
     };
+    var test = 0;
+    var max = 0;
 
     if (imp === 100 && answer1 === 1){
+      test += 1;
       java += 5;
     }else if (imp === 100 && answer1 === 10){
+      test += 1;
       ruby += 5;
     }else if (imp === 200 && answer2 === 3){
       swift += 2;
     }else if (imp === 200 && answer2 === 4){
+      test += 1;
       html += 5;
     }else if (imp === 300 && answer3 === 21){
+      test += 1;
       c+= 5;
     }else if (imp === 300 && answer3 === 7){
       swift += 2;
     }else if (imp === 300 && answer3 === 8){
+      test += 1;
       java += 5;
     }else if (imp === 300 && answer3 === 9){
       js += 2;
     }else if (imp === 300 && answer3 === 10){
+      test += 1;
       python += 5;
     }else if (imp === 400 && answer4 === 11){
+      test += 1;
       html += 5;
     }else if (imp === 400 && answer4 === 12){
       php += 2;
     }else if (imp === 400 && answer4 === 13){
+      test += 1;
       c += 5;
     }else if (imp === 500 && answer5 === 14){
       object += 2;
     }else if (imp === 500 && answer5 === 15){
       java += 2;
     }else if (imp === 500 && answer5 === 16){
+      test += 1;
       html += 5;
     };
+
+    if (test === 1){
+      max = 10;
+    }else if (test === 0){
+      max = 7;
+    };
+      var match = 0.00;
+      if (object > c && object > java && object > swift && object > js && object > php && object > python && object > ruby && object > html){
+        match = (object/max)*100;
+        $("#output").text("Objective -C is your best language. With a " + match + "% match!").show();
+      };
+      if (c > object && c > java && c > swift && c > js && c > php&& c > python && c > ruby && c > html) {
+        match = (c/max)*100;
+        $("#output").text("C# is your best language. With a " + match + "% match!").show();
+      };
+      if (java > object && java > c && java > swift && java > js && java > php && java > python && java > ruby && java > html){
+        match = (java/max)*100;
+        $("#output").text("Java is your best language. With a " + match + "% match!").show();
+      };
+      if (swift > object && swift > c && swift > java && swift > js && swift > php && swift > python && swift > ruby && swift > html){
+        match = (java/max)*100;
+        $("#output").text("Swift is your best language. With a " + match + "% match!").show();
+      };
+      if (js > object && js > c && js > java && js > swift && js > php && js > python && js > ruby && js >  html){
+        match = (js/max)*100;
+        $("#output").text("Javascript is your best language. With a " + match + "% match!").show();
+      };
+      if (php > object && php > c && php > java && php > swift && php > js && php > python && php > ruby && php > html){
+        match = (php/max)*100;
+        $("#output").text("PHP is your best language. With a " + match + "% match!").show();
+      };
+      if (python > object && python > c && python > java && python > swift && python > js && python > php && python > ruby && python > html){
+        match = (python/max)*100;
+        $("#output").text("Python is your best language. With a " + match + "% match!").show();
+      };
+      if (ruby > object && ruby > c && ruby > java && ruby > swift && ruby > js && ruby > php && ruby > python && ruby > html){
+        match = (ruby/max)*100;
+        $("#output").text("Ruby is your best language. With a " + match + "% match!").show();
+
+      };
+      if (html > object && html > c && html > java && html > swift && html > js && html > php && html > python && html > ruby){
+        match = (html/max)*100;
+        $("#output").text("HTML/Css is your best language. With a " + match + "% match!").show();
+      };
+
+
 
     alert(object);
     alert(c);
@@ -134,36 +191,6 @@ $(function(){
     alert(total);
 
 
-
-
-            if (answer1 === 1 && answer2 === 3 && answer3 === 9 && answer4 === 11 && answer5 === 16){
-              //total = 40
-              $("#output").text("Javascript is your best language").show();
-            }else if (answer1 === 1 && answer2 === 3 && answer3 === 8 && answer4 === 12 && answer5 === 15){
-                //total = 39
-              $("#output").text("Java is your best language").show();
-            }else if (answer1 === 1 && answer2 === 3 && answer3 === 7 && answer4 === 12 && answer5 === 14){
-              //total = 37
-              $("#output").text("Objective -C is your best language").show();
-            }else if (answer1 === 10 && answer2 === 3 && answer3 === 7 && answer4 === 12 && answer5 === 15){
-              //total = 47
-              $("#output").text("Swift is your best language").show();
-            }else if (answer1 === 1 && answer2 === 3 && answer3 === 9 && answer4 === 12 && answer5 === 16){
-              //total = 41
-              $("#output").text("PHP is your best language").show();
-            }else if (answer1 === 1 && answer2 === 3 && answer3 === 10 && answer4 === 12 && answer5 === 16){
-              //total = 42
-              $("#output").text("Python is your best language").show();
-            }else if (answer1 === 10 && answer2 === 4 && answer3 === 9 && answer4 === 12 && answer5 === 16){
-              //total = 51
-              $("#output").text("Ruby is your best language").show();
-            }else if (answer1 === 10 && answer2 === 4 && answer3 === 9 && answer4 === 11 && answer5 === 16){
-              //total = 50
-              $("#output").text("HTML/Css is your best language").show();
-            }else if (answer1 === 1 && answer2 === 3 && answer3 === 21 && answer4 === 13 && answer5 === 14){
-              //total = 52
-              $("#output").text("C# is your best language").show();
-            }else alert("Error with standard answers");
 
 
 
